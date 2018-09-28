@@ -1,0 +1,133 @@
+html{
+    scroll-behavior: smooth;
+}
+
+/* body standard template */
+body {
+    margin: 2.2%;
+    padding: 0;
+    background-image: url(../images/journey.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* main body style */
+.main {
+    color: rgb(103, 173, 101);
+    opacity: 0.9;
+    font-family: 'Poor Story';
+    font-size: 40px;
+    position: relative;
+    letter-spacing: 10px;
+    float: right;
+}
+/* style for heading including animation */
+h1 {
+    color: rgb(114, 67, 49);
+    position: relative;
+    bottom: 250px;
+    font-size: 50px;
+    font-family: 'Bangers';
+    height: 100px;
+    animation-name: h1;
+    animation-duration: 3s;
+}
+
+@keyframes h1 {
+    75%  {color:rgb(114, 67, 49); bottom:500px;}
+    90%  {color:rgb(114, 67, 49); transform: rotate(360deg);}
+    100% {color:rgb(114, 67, 49); bottom:250px;}
+}
+
+/* nav interactivity */
+nav a {
+    text-decoration: none;
+    color:rgb(114, 67, 49);
+}
+
+ a:hover {
+    color:rgb(171, 194, 171) ;
+}
+
+a:active {
+    color:chartreuse;
+}
+/* general body layout */
+h2 {
+  font-size: 40px;
+  font-family: 'Bangers';
+  margin-right: 500px;
+  color: rgb(114, 67, 49);
+  opacity: 0.9;
+  color:rgb(114, 67, 49);
+}
+
+p {
+    float:bottom;
+    font-family: 'Poor Story';
+    color: #02020B;
+    font-size: 30px;
+}
+
+/* design and interactivity for footer */
+hr {
+    background-color: rgb(160, 83, 83);
+    height: 2px;
+}
+
+.nav2 {
+    color: rgb(103, 173, 101);
+    opacity: 0.9;
+    font-family: 'Poor Story';
+    font-size: 40px;
+    position: relative;
+    top: 300px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.body {
+    position: relative;
+    top: 280px;
+}
+
+.skill img{
+    right: 0;
+    position: relative;
+    margin-left: 300px;
+    display: inline;
+    transition: transform 1s;
+}
+
+.skill img:hover{
+    transform: rotate(360deg);
+}
+
+img {
+    width: 220px;
+    height: 270px;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 1%;
+    border-bottom-right-radius: 1%;
+
+    position: relative;
+    left:400px;
+    bottom:50px;
+}
+/* logo links */
+.logo {
+    position: relative;
+    border-radius: 5%;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    opacity: 0.0;
+    transition: all 500ms ease-in-out;
+    transform: translateY(20px);
+}
+
+footer:hover .logo{
+    opacity: 1.0;
+    transform: translateY(-30px);
+}
